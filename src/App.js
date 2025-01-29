@@ -29,6 +29,7 @@ export default function App() {
   };
 
   const router = createBrowserRouter([
+    { basename: "/shop_react" },
     {
       path: "/",
       element: (
@@ -75,7 +76,6 @@ export default function App() {
         },
       ],
     },
-    { basename: "/shop_react" },
   ]);
 
   return (
