@@ -1,0 +1,27 @@
+header {
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #272b2b;
+
+  img {
+    width: 100px;
+    cursor: pointer;
+  }
+
+  nav {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    :hover {
+      color: #b8ec27;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
