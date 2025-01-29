@@ -1,7 +1,7 @@
 {
   "name": "lesson-5.1",
   "version": "0.1.0",
-  "homepage": "https://github.com/TheYull/shop_react.git",
+  "homepage": "https://github.com/TheYull/shop_react",
   "private": true,
   "dependencies": {
     "axios": "^1.7.9",
