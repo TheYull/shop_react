@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/TheYull/shop_react.git/static/css/main.f7912405.css",
+    "main.js": "/TheYull/shop_react.git/static/js/main.f8bef308.js",
+    "index.html": "/TheYull/shop_react.git/index.html",
+    "static/media/logo.svg": "/TheYull/shop_react.git/static/media/logo.5622e9832ab8451a2942526eafff7f08.svg",
+    "main.f7912405.css.map": "/TheYull/shop_react.git/static/css/main.f7912405.css.map",
+    "main.f8bef308.js.map": "/TheYull/shop_react.git/static/js/main.f8bef308.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f7912405.css",
+    "static/js/main.f8bef308.js"
+  ]
+}
