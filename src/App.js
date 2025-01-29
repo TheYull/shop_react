@@ -28,59 +28,61 @@ export default function App() {
     );
   };
 
-  const router = createBrowserRouter([
-    { basename: "/shop_react" },
-    {
-      path: "/",
-      element: (
-        <Layout
-          productsInCart={productsInCart}
-          setProductsInCart={setProductsInCart}
-        />
-      ),
-      children: [
-        {
-          index: true,
-          element: (
-            <BestSellers
-              productsInCart={productsInCart}
-              setProductsInCart={setProductsInCart}
-            />
-          ),
-        },
-        {
-          path: "/category",
-          element: <Category />,
-        },
-        {
-          path: "/product/:productId",
-          element: (
-            <Product
-              productsInCart={productsInCart}
-              setProductsInCart={setProductsInCart}
-            />
-          ),
-        },
-        {
-          path: "/address",
-          element: <Address />,
-        },
-        {
-          path: "/cart",
-          element: (
-            <Cart
-              productsInCart={productsInCart}
-              setProductsInCart={setProductsInCart}
-            />
-          ),
-        },
-      ],
-    },
-  ]);
+  const router = createBrowserRouter(
+    [
+      {
+        path: "/",
+        element: (
+          <Layout
+            productsInCart={productsInCart}
+            setProductsInCart={setProductsInCart}
+          />
+        ),
+        children: [
+          {
+            index: true,
+            element: (
+              <BestSellers
+                productsInCart={productsInCart}
+                setProductsInCart={setProductsInCart}
+              />
+            ),
+          },
+          {
+            path: "/category",
+            element: <Category />,
+          },
+          {
+            path: "/product/:productId",
+            element: (
+              <Product
+                productsInCart={productsInCart}
+                setProductsInCart={setProductsInCart}
+              />
+            ),
+          },
+          {
+            path: "/address",
+            element: <Address />,
+          },
+          {
+            path: "/cart",
+            element: (
+              <Cart
+                productsInCart={productsInCart}
+                setProductsInCart={setProductsInCart}
+              />
+            ),
+          },
+        ],
+      },
+    ],
+    { basename: "/shop_react" }
+  );
 
   return (
     <div className="App">
-      <RouterProvider router={router} basename={shop_react} />
+      <RouterProvider router={router} />
     </div>
   );
 }
