@@ -75,6 +75,7 @@ export default function App() {
         },
       ],
     },
+    { basename: "/shop_react" },
   ]);
 
   return (
