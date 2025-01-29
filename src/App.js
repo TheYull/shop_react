@@ -49,11 +49,11 @@ export default function App() {
             ),
           },
           {
-            path: "/category",
+            path: "category",
             element: <Category />,
           },
           {
-            path: "/product/:productId",
+            path: "product/:productId",
             element: (
               <Product
                 productsInCart={productsInCart}
@@ -62,11 +62,11 @@ export default function App() {
             ),
           },
           {
-            path: "/address",
+            path: "address",
             element: <Address />,
           },
           {
-            path: "/cart",
+            path: "cart",
             element: (
               <Cart
                 productsInCart={productsInCart}
