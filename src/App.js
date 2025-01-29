@@ -80,7 +80,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <RouterProvider router={router} />
+      <RouterProvider router={router} basename={shop_react} />
     </div>
   );
 }
